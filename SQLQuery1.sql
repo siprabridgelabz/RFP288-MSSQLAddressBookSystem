@@ -27,3 +27,6 @@ INSERT INTO AddressBookDB(FirstName,LastName,Address,City,State,Zip,PhoneNumber,
 --UC4-Ability to edit existing contact person using their Name
 UPDATE AddressBookDB SET City='VYR' WHERE FirstName='Sipra';
 SELECT*FROM AddressBookDB
+
+--UC5-Ability to delete a person using person's Name
+DELETE AddressBookDB WHERE FirstName='Sipra';
