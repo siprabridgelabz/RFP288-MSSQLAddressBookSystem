@@ -38,3 +38,7 @@ SELECT*FROM AddressBookDB WHERE State='Jaipur';
 --UC7--Ability to understand the size of address book by City and State
 SELECT COUNT(*)FROM AddressBookDB WHERE City='DKL';
 SELECT COUNT(*)FROM AddressBookDB WHERE State='Karnataka';
+
+--UC8--Ability to retrieve entries sorted alphabetically by Person’s name for a given city
+SELECT*FROM AddressBookDB ORDER BY City DESC;
+SELECT*FROM AddressBookDB ORDER BY FirstName;
