@@ -53,3 +53,6 @@ UPDATE AddressBookDB SET AddressBookType='Family' ,  AddressBookName='Sister'
 WHERE PersonID=3
 UPDATE AddressBookDB SET AddressBookType='Profession' ,  AddressBookName='Doctor' 
 WHERE PersonID=5
+
+--UC10--Ability to get number of contact persons i.e. count by type
+SELECT AddressBookType,COUNT(AddressBookType) AS Sipra FROM AddressBookDB GROUP BY AddressBookType; 
