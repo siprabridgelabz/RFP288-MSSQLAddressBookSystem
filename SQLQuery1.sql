@@ -42,3 +42,14 @@ SELECT COUNT(*)FROM AddressBookDB WHERE State='Karnataka';
 --UC8--Ability to retrieve entries sorted alphabetically by Person’s name for a given city
 SELECT*FROM AddressBookDB ORDER BY City DESC;
 SELECT*FROM AddressBookDB ORDER BY FirstName;
+
+--UC9--Ability to identify each Address Book with name and Type
+ALTER TABLE AddressBookDB ADD AddressBookType VARCHAR(50);
+ALTER TABLE AddressBookDB ADD AddressBookName VARCHAR(60);
+SELECT*FROM AddressBookDB
+UPDATE AddressBookDB SET AddressBookType='Friends' ,  AddressBookName='Hari' 
+WHERE PersonID=4
+UPDATE AddressBookDB SET AddressBookType='Family' ,  AddressBookName='Sister' 
+WHERE PersonID=3
+UPDATE AddressBookDB SET AddressBookType='Profession' ,  AddressBookName='Doctor' 
+WHERE PersonID=5
