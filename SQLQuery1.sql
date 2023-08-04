@@ -23,3 +23,7 @@ INSERT INTO AddressBookDB(FirstName,LastName,Address,City,State,Zip,PhoneNumber,
 'Lipsa','Panda','Rudhia','DKL','Jaipur',755044,9668687855,'lipsapanda@gmail.com'),(
 'Sabitri','Sahoo','Amalapada','Kalahandi','Karnataka',755423,9868687835,'sabitrisahoo@gmail.com'),(
 'Likhit','Praharaj','Bls','Balasore','Tamilnadu',754055,9668687255,'likhitpraharaj@gmail.com')
+
+--UC4-Ability to edit existing contact person using their Name
+UPDATE AddressBookDB SET City='VYR' WHERE FirstName='Sipra';
+SELECT*FROM AddressBookDB
