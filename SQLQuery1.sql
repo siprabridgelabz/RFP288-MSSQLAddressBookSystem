@@ -34,3 +34,7 @@ DELETE AddressBookDB WHERE FirstName='Sipra';
 --UC6--Ability to Retrieve Person belonging to a City or State from the Address Book
 SELECT*FROM AddressBookDB WHERE City='DKL';
 SELECT*FROM AddressBookDB WHERE State='Jaipur';
+
+--UC7--Ability to understand the size of address book by City and State
+SELECT COUNT(*)FROM AddressBookDB WHERE City='DKL';
+SELECT COUNT(*)FROM AddressBookDB WHERE State='Karnataka';
