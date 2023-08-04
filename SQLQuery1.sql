@@ -56,3 +56,10 @@ WHERE PersonID=5
 
 --UC10--Ability to get number of contact persons i.e. count by type
 SELECT AddressBookType,COUNT(AddressBookType) AS Sipra FROM AddressBookDB GROUP BY AddressBookType; 
+
+--UC11--Ability to add person to both Friend and Family
+INSERT INTO AddressBookDB(FirstName,LastName,Address,City,State,Zip,PhoneNumber,EmailID,AddressBookType,AddressBookName)
+VALUES('Priya','Jain','Konkani','Kunnur','Kerela',755047,9668325835,'priyajain@gmail.com','Family','Sister'),
+('Nakul','Thakur','Gorakhpur','Louknow','UP',755145,8658325835,'nakulthakur@gmail.com','Friend','Profession');
+
+SELECT*FROM AddressBookDB
