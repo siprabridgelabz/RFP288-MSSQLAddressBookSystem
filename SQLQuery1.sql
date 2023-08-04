@@ -1,4 +1,3 @@
---ctr+s
 --create DB
 --UC1-Create Database
 CREATE DATABASE AddressBook_Service
@@ -16,3 +15,11 @@ PhoneNumber BIGINT NOT NULL,
 EmailID VARCHAR(50) NOT NULL);
 
 SELECT*FROM AddressBookDB
+
+--UC3-Ability to insert new Contacts to Address Book
+INSERT INTO AddressBookDB(FirstName,LastName,Address,City,State,Zip,PhoneNumber,EmailID)
+ VALUES(
+'Sipra','Mishra','MalaAnadapur','Jajpur','Odisha',755043,9668687835,'sipramishra252@gmail.com'),(
+'Lipsa','Panda','Rudhia','DKL','Jaipur',755044,9668687855,'lipsapanda@gmail.com'),(
+'Sabitri','Sahoo','Amalapada','Kalahandi','Karnataka',755423,9868687835,'sabitrisahoo@gmail.com'),(
+'Likhit','Praharaj','Bls','Balasore','Tamilnadu',754055,9668687255,'likhitpraharaj@gmail.com')
